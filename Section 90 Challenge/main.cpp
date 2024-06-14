@@ -76,24 +76,24 @@ int main() {
     char lowerInput;
 
     do {
-        cout << "P - Print numbers" << endl;
+        cout << "\nP - Print numbers" << endl;
         cout << "A - Add a number" << endl;
         cout << "M - Display mean of the numbers" << endl;
         cout << "S - Display the smallest number" << endl;
         cout << "L - Display the largest number" << endl;
         cout << "C - Clear List" << endl;
         cout << "Q - Quit" << endl;
-
+        cout << "\nEnter your choice: ";
         cin >> input;
         lowerInput = tolower(input);
 
         switch (lowerInput) {
             case 'p':
-                cout << "printed list: " << endl;
+                cout << "Printed list: " << endl;
                 printList();
                 break;
             case 'a':
-                cout << "enter new number:" << endl;
+                cout << "\nEnter new number:" << endl;
                 int newNumber;
                 cin>>newNumber;
                 addList(newNumber);
@@ -133,7 +133,7 @@ int main() {
                 list.clear();
                 break;
             case 'q':
-                cout<<"Good bye" << endl;
+                cout<<"Goodbye" << endl;
                 break;
             default:
                 cout<<"Unknown selection, please try again"<< endl;
