@@ -42,22 +42,22 @@ void largest()
 
 void printList()
 {
-    for (int num:list)
-    {
-        if (num == 1) // why is it 1 and no 0?
-        {
-            cout<<"[ ";
-        }
-    cout<<num<<" ";
-        if (num ==  list.size())
-        {
-            cout<<"]";
-        }
-    }
     if (list.empty())
     {
         cout<<"[ ]"<<endl;
     }
+    else {
+        cout<<"[ ";
+        for (int num: list) {
+            if (num == 1) // why is it 1 and no 0?
+            {
+
+            }
+            cout << num << " ";\
+        }
+        cout << "]";
+    }
+
     cout<<endl;
 }
 
